@@ -6,7 +6,7 @@ class BST
   end
 
   def insert(n)
-    if n < = @data
+    if n <= @data
       if @left.nil?
         @left = BST.new(n)
       else
