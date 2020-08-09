@@ -14,7 +14,7 @@ class BST
       end
     else
       if @right.nil?
-        @right - BST.new(n)
+        @right = BST.new(n)
       else
         @right.insert(n)
       end
