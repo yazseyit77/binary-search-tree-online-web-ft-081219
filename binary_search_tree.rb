@@ -21,10 +21,10 @@ class BST
     end
   end
 
-  def each(block)
-    @left.each(block) if @left
+  def each(&block)
+    @left.each(&block) if @left
     block.call(@data)
-    right.each(block) if @right
+    right.each(&block) if @right
   end
 
 end
